@@ -212,5 +212,20 @@ header{
 }
 
 
+@media only screen and (max-width: 768px){
+  header{
+    width: device-width;
+  }
+  .header-title p{
+    font-size: 16px;
+  }
+  .col{
+    height: 50px;
+    width: 100px;
+  }
 
+  .col-1 p{
+    font-size: 11px;
+  }
+}
 
