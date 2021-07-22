@@ -8,7 +8,7 @@
 body{
     background-color: rgb(12, 1, 19);
     width: 100vw;
-    height:700px;
+    height:200vh;
     font-family: "Gotham Pro";
     overflow-y:scroll;
     overflow-x: hidden;
@@ -212,20 +212,32 @@ header{
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 868px){
   header{
     width: device-width;
   }
   .header-title p{
     font-size: 16px;
   }
-  .col{
-    height: 50px;
-    width: 100px;
+  .col-1{
+    height: 250px;
+    width: 250px;
+    top: 570px;
+    left: 55px;
+    background-color: rgb(12, 1, 19);
   }
 
+
   .col-1 p{
-    font-size: 11px;
+    font-size: 14px;
+    text-align: center;
   }
+
+  .col-2 p, h1, h2, h3 {
+    text-align: center;
+  }
+
+  
 }
+
 
