@@ -7,8 +7,8 @@
 
 body{
     background-color: rgb(12, 1, 19);
-    width: 200vw;
-    height:200vhgi;
+    width: 100vw;
+    height:200vh;
     font-family: "Gotham Pro";
     overflow-y:scroll;
     overflow-x: hidden;
@@ -49,6 +49,7 @@ header{
     padding: 20px;
     margin: 20px;
     border: 20px;
+    display: none;
 
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 
@@ -155,7 +156,7 @@ header{
     background-color: rgb(12, 1, 19);
     position: absolute;
     left: 350px;
-    top: 460px;
+    top: 1000px;
     border-radius: 20px;
 }
 
@@ -175,7 +176,8 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  top: 700px;
+  top: 200vh;
+  bottom: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,33 +213,53 @@ header{
   font-style: oblique;
 }
 
-
-@media only screen and (max-width: 868px){
-  header{
-    width: device-width;
-  }
+@media only screen and (max-height: 700px){
+  .header-items{
+  display: none;}
   .header-title p{
-    font-size: 16px;
+    font-size: 23px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    padding: 20px;
+
   }
+
   .col-1{
-    height: 250px;
-    width: 250px;
-    top: 570px;
-    left: 55px;
-    background-color: rgb(12, 1, 19);
+    position: absolute;
+    left: 20px;
+    top: 400px;
   }
 
-
-  .col-1 p{
-    font-size: 14px;
-    text-align: center;
+  .contact{
+    padding: 30px;
   }
 
-  .col-2 p, h1, h2, h3 {
-    text-align: center;
-  }
-
-  
 }
+
+@media only screen and (max-height: 900px){
+  .header-items{
+  display: none;}
+  .header-title p{
+    font-size: 23px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    padding: 20px;
+
+  }
+
+  .col-1{
+    position: absolute;
+    left: 60px;
+    top: 900px;
+  }
+
+  .contact{
+    padding: 30px;
+  }
+
+}
+
 
 
